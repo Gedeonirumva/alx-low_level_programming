@@ -1,21 +1,26 @@
 #include "main.h"
 
 /**
-  * _abs - Computes the absolute value of an integer.
-  * @c: The number to be computed.
+  * puts2 - Prints every other character of a string
+  * @str: The string to be treated
   *
-  * Return: Absolute value of number or zero
+  * Return: void
   */
-int _abs(int c)
+void puts2(char *str)
 {
-	if (c < 0)
+	int i;
+	int j = 0;
+
+	while (str[j] != '\0')
 	{
-		int abs_val;
-
-		abs_val = c * -1;
-
-		return (abs_val);
+		j++;
 	}
 
-	return (c);
+	for (i = 0; i < j; i += 2)
+	{
+		_putchar(str[i]);
+	}
+
+	_putchar('\n');
 }
+
